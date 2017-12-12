@@ -1,12 +1,14 @@
 jQuery(document).ready(function($) {
-	$(".email").bind('input', function() {
-		if($(this).val()!=""){
-			$(".ok-button-"+$(this).data("number")).addClass('show');
+	function move_block(x,y,target){
+		if (x>0 || x<0) {
+			$(target).css("left",x+"px");
 		}
-		else{
-			if($(".ok-button-"+$(this).data("number")).hasClass('show')){
-				$(".ok-button-"+$(this).data("number")).removeClass('show');
-			}
+		if(y>0 || y<0){
+			$(target).css("top",y+"px");
 		}
-	});
+		console.log($(".experience .mid-line").offset().left- $(target+' .left-line').offset().left);
+		$(target+' .left-line').css("width",($(".experience .mid-line").offset().left- $(target).offset().left)+"px");
+
+		return true;
+	}
 });
