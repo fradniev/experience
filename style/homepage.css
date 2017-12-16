@@ -250,8 +250,8 @@ section.footer .left-boxes .info-box-title::before, section.footer .right-boxes 
 	position: absolute;
     content: "";
     top: 15px;
-    right: -6.5%;
-    width: 6.5%;
+    left: 0%;
+    width: 106.5%;
     height: 1px;
     background: #871e23;
 }
@@ -260,8 +260,8 @@ section.footer .left-boxes .info-box-title::before, section.footer .right-boxes 
 	position: absolute;
     content: "";
     top: 40px;
-    left: -6.5%;
-    width: 6.5%;
+    right: 0%;
+    width: 106.5%;
     height: 1px;
     background: #871e23;
 }
