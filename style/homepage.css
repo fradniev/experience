@@ -136,6 +136,9 @@ span{
     color: #000;
     font-weight: 400;
     text-align: left;
+    top:0;
+    left:0;
+    transition: 1s all;
 }
 .info-box h2{
 	margin: 0;
@@ -256,6 +259,7 @@ section.footer .left-boxes .info-box-title::before, section.footer .right-boxes 
     height: 1px;
     background: #871e23;
     transform-origin: top left;
+    transition: 1s all;
 }
 .right-line{
 	z-index: -1;
@@ -268,6 +272,7 @@ section.footer .left-boxes .info-box-title::before, section.footer .right-boxes 
     background: #871e23;
     transform-origin: top left;
     transform: rotate(180deg);
+    transition: 1s all;
 }
 @media only screen and (max-width: 1150px){
 	.profile{
