@@ -31,7 +31,6 @@ img{
 }
 section{
 	background:#fff;
-	overflow: hidden;
 	padding: 18px;
 	padding-top: 0;
 }
@@ -126,6 +125,7 @@ span{
 }
 .section-container{
 	padding-top:45px;
+    display: table;
 }
 .info-box{
 	position: relative;
@@ -173,6 +173,7 @@ span{
 .info-box-content{
 	padding: 15px 30px 45px 30px;
     overflow: hidden;
+    background: white;
 }
 .info-box-inner-content{
 	margin-bottom: 10px;
@@ -254,16 +255,19 @@ section.footer .left-boxes .info-box-title::before, section.footer .right-boxes 
     width: 106.5%;
     height: 1px;
     background: #871e23;
+    transform-origin: top left;
 }
 .right-line{
 	z-index: -1;
 	position: absolute;
     content: "";
     top: 40px;
-    right: 0%;
-    width: 106.5%;
+    left: 0%;
+    width: 6.2%;
     height: 1px;
     background: #871e23;
+    transform-origin: top left;
+    transform: rotate(180deg);
 }
 @media only screen and (max-width: 1150px){
 	.profile{
